@@ -23,6 +23,10 @@
             margin-bottom: 1rem
         }
 
+        .h1_login {
+            margin-top: 4rem;
+        }
+
         form {
             display: flex;
             flex-direction: column;
@@ -30,7 +34,8 @@
         }
 
         input,
-        textarea {
+        textarea,
+        button {
             margin-top: .2rem;
             margin-bottom: .8rem;
             width: 100%;
@@ -55,6 +60,17 @@
         <input type="submit">
     </form>
 
+
+    <h1 class="h1_login">Login test</h1>
+    <form name="login" netlify>
+        <label for="username">Username <input type="text" id="username" name="username" placeholder="Enter username"
+                required></label>
+        <label for="password">Password <input type="text" id="password" name="password" placeholder="Enter password"
+                required></label>
+        <label> <input type="checkbox" checked="checked" name="remember">Remember me</label>
+        <button type="submit">Login</button>
+
+    </form>
 
 
 </body>
