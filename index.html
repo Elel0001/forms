@@ -26,7 +26,7 @@
         form {
             display: flex;
             flex-direction: column;
-            width: 12rem;
+            width: 18rem;
         }
 
         input,
@@ -34,10 +34,12 @@
             margin-top: .2rem;
             margin-bottom: .8rem;
             width: 100%;
+            height: 2.5rem;
         }
 
         textarea {
-            height: 6rem;
+            height: 10rem;
+            color: rgb(15, 15, 85);
         }
     </style>
 </head>
@@ -47,11 +49,13 @@
 <body>
     <h1>Form test</h1>
     <form name="contact" netlify>
-        <label for="name">Your Name: <input type="text" id="name" name="name" /></label>
-        <label for="email">Your e-mail: <input type="email" id="email" name="email" /></label>
+        <label for="name">Your Name: <input type="text" id="name" name="name"></label>
+        <label for="email">Your e-mail: <input type="email" id="email" name="email"></label>
         <label for="message">Message:</label><textarea id="message"></textarea>
         <input type="submit">
     </form>
+
+
 
 </body>
 
